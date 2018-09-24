@@ -19,19 +19,12 @@ module.exports = function check(str, bracketsConfig) {
 		
 		else if (str[i] == ")") {
 				
-				if (count == 0) {
-					
-					return false;
-					
-				} else {
-				
-					count--;
+			count--;
 				
 			}
-			
+		
 	}
 	
-
   
     if (count == 0) {
 	  
@@ -44,5 +37,3 @@ module.exports = function check(str, bracketsConfig) {
 	    }
   
 	}
-
-}
